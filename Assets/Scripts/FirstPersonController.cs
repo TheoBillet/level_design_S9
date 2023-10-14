@@ -74,7 +74,9 @@ namespace StarterAssets
 
 		private const float _threshold = 0.01f;
 
-		private bool IsCurrentDeviceMouse
+        private GameController gameController;
+
+        private bool IsCurrentDeviceMouse
 		{
 			get
 			{
@@ -108,7 +110,9 @@ namespace StarterAssets
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
-		}
+
+            gameController = FindObjectOfType<GameController>();
+        }
 
 		private void Update()
 		{
@@ -273,6 +277,7 @@ namespace StarterAssets
                 // Deactivate the collided object (making it disappear).
                 //other.gameObject.SetActive(false);
                 Debug.Log("Le joueur a été vu !");
+                gameController.ShowDeathTextAndButtons("Une camera t'a vu !");
             }
         }
     }
