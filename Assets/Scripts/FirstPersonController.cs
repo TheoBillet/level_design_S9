@@ -264,5 +264,16 @@ namespace StarterAssets
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
 		}
-	}
+
+        void OnTriggerEnter(Collider other)
+        {
+            // Check if the object the player collided with has the "PickUp" tag.
+            if (other.gameObject.CompareTag("CameraVision"))
+            {
+                // Deactivate the collided object (making it disappear).
+                //other.gameObject.SetActive(false);
+                Debug.Log("Le joueur a été vu !");
+            }
+        }
+    }
 }
