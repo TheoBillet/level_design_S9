@@ -204,8 +204,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f28a9c077d88f44db86ced5b88c9dde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  readPanel: {fileID: 6963373211018402721, guid: 296575a51cae24a42941761e7f354ad4,
-    type: 3}
+  readPanel: {fileID: 0}
+  idText: 0
+  noteUI: {fileID: 0}
+  pute: 
 --- !u!1 &5853609501614279575
 GameObject:
   m_ObjectHideFlags: 0
