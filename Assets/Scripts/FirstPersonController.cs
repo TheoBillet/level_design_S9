@@ -279,10 +279,10 @@ namespace StarterAssets
             // Check if the object the player collided with has the "PickUp" tag.
             if (other.gameObject.CompareTag("CameraVision"))
             {
-                // Deactivate the collided object (making it disappear).
-                //other.gameObject.SetActive(false);
-                Debug.Log("Le joueur a été vu !");
                 gameController.ShowDeathTextAndButtons("Une camera t'a vu !");
+            } else if (other.gameObject.CompareTag("Laser"))
+            {
+                gameController.ShowDeathTextAndButtons("Tu as traversé un laser !");
             }
         }
     }
