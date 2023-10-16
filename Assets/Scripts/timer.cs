@@ -26,7 +26,7 @@ public class timer : MonoBehaviour
     void Update()
     {
         time = time + Time.deltaTime;
-        if (time > 5)
+        if (time > 3)
         {
             minutes++;
             if (minutes >= 60)

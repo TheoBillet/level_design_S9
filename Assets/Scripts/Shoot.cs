@@ -12,6 +12,9 @@ public class Shoot : MonoBehaviour
     private float lastShoot = 0;
     private float rateShoot = 0.5f;
     private float timeShoot = 0.20f;
+    public GameObject gun;
+    public Camera fpsCam;
+    public float range = 100f;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,10 @@ public class Shoot : MonoBehaviour
         if (lightOnMaterial is null)
         {
             Debug.Log("light material is null");
+        }
+        if (gun is null)
+        {
+            Debug.Log("fps cam null dans player shoot");
         }
     }
 
@@ -56,6 +63,28 @@ public class Shoot : MonoBehaviour
         laser.SetActive(true);
         lastShoot = Time.time;
         lightIndicator.GetComponent<MeshRenderer>().material = lightOnMaterial;
+
+
+
+        shoot();
+    }
+
+
+    public void shoot()
+    {
+        RaycastHit[] hits;
+        hits = Physics.RaycastAll(gun.transform.position, fpsCam.transform.forward, range);
+
+        for (int i = 0; i < hits.Length; i++)
+        {
+            RaycastHit hit = hits[i];
+            Target target = hit.transform.GetComponent<Target>();
+            //Debug.DrawRay(gun.transform.position, fpsCam.transform.forward * range, Color.green, abilityTime);
+            if (target != null)
+            {
+                target.destroy();
+            }
+        }
     }
 
     public void StopShooting ()

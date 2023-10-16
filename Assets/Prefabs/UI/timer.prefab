@@ -11,14 +11,13 @@ GameObject:
   - component: {fileID: 1965030038667901440}
   - component: {fileID: 1965030038667901446}
   - component: {fileID: 1965030038667901447}
-  - component: {fileID: 1965030038667901445}
   m_Layer: 5
   m_Name: timerscript
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1965030038667901440
 RectTransform:
   m_ObjectHideFlags: 0
@@ -138,22 +137,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1965030038667901445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965030038667901441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfd159d6bc316ab429efca6058690dcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 0
-  hour: 23
-  minutes: 0
-  textUI: {fileID: 1965030038667901447}
 --- !u!1 &1965030039022319716
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,13 +148,14 @@ GameObject:
   - component: {fileID: 1965030039022319723}
   - component: {fileID: 1965030039022319721}
   - component: {fileID: 1965030039022319722}
+  - component: {fileID: 248655404121556465}
   m_Layer: 5
   m_Name: timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1965030039022319723
 RectTransform:
   m_ObjectHideFlags: 0
@@ -214,7 +198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -231,3 +215,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &248655404121556465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965030039022319716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd159d6bc316ab429efca6058690dcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+  hour: 23
+  minutes: 0
+  textUI: {fileID: 1965030038667901447}
