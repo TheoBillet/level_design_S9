@@ -124,8 +124,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313318145350386769}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.84, y: -0.1, z: -0.05}
-  m_LocalScale: {x: 10.290598, y: 0.91427165, z: 1.010586}
+  m_LocalPosition: {x: 6.47, y: -0.69, z: -0.14}
+  m_LocalScale: {x: 10.290598, y: 1.8502115, z: 0.24393094}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6803704290374573253}
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 6803704290374573253}
   m_Layer: 0
   m_Name: CameraPrefab
-  m_TagString: Untagged
+  m_TagString: Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -240,9 +240,10 @@ GameObject:
   - component: {fileID: 7654280580092422468}
   - component: {fileID: 6782731520970866547}
   - component: {fileID: 7166850972585779103}
+  - component: {fileID: 1882589602835718409}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -323,5 +324,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1882589602835718409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4082719473802809182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4438b409141c09c428016e69e05b226f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disabledColor: {fileID: 2100000, guid: 5c8f6491d7f7f184ca6f207b4225d62a, type: 2}
+  enabledColor: {fileID: 2100000, guid: bc97ebb73b9a61847a1c79f32c05adb5, type: 2}
+  camToDelete: {fileID: 1313318145350386769}
+  disabled: 0

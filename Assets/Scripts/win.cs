@@ -33,7 +33,7 @@ public class win : MonoBehaviour
             playerAround = true;
             if (timer.minutes >= 45 || timer.hour < 23)
             {
-                losePanel.SetActive(false);
+                losePanel.SetActive(true);
             } else
             {
                 winPanel.SetActive(true);
