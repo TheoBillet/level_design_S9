@@ -32,6 +32,6 @@ public class story : MonoBehaviour
 
     public void launchGame ()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("MainScene");
     }
 }

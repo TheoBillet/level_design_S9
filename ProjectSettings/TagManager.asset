@@ -10,6 +10,7 @@ TagManager:
   - openPanel
   - readPanel
   - Camera
+  - Laser
   layers:
   - Default
   - TransparentFX
