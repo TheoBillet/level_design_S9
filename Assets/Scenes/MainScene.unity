@@ -638,7 +638,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1965030039243450499}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339561398}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfd159d6bc316ab429efca6058690dcf, type: 3}
@@ -2117,9 +2117,9 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289403571}
   m_CullTransparentMesh: 1
---- !u!1 &1339561398 stripped
+--- !u!1 &1375176665 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1965030039022319716, guid: 922f39e6bd80cfb4abc19b5989282337,
+  m_CorrespondingSourceObject: {fileID: 1965030038667901441, guid: 922f39e6bd80cfb4abc19b5989282337,
     type: 3}
   m_PrefabInstance: {fileID: 1965030039243450499}
   m_PrefabAsset: {fileID: 0}
@@ -3681,7 +3681,7 @@ PrefabInstance:
         type: 3}
       propertyPath: timer
       value: 
-      objectReference: {fileID: 1339561398}
+      objectReference: {fileID: 1375176665}
     - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: m_Name
